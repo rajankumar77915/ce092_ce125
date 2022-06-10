@@ -1,0 +1,207 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+.lg{
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 190px;
+    height: 7vh;
+    top: -40px;
+    right: -90px;
+    margin-right: 100px;
+    margin-top: 50px;
+    background: linear-gradient(90deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4); 
+    background-size: 400%;
+    border-radius: 7px;
+    z-index: 1;
+}
+.lg a{
+    text-decoration: none;
+    position: relative;
+    color: #fff;
+}
+.lg:hover{
+    animation: animate 5s linear infinite;
+    cursor: pointer;
+}
+
+@keyframes animate{
+    0%{
+        background-position: 0%;
+    }
+    100%{
+        background-position: 100%;
+    }
+}
+.lg::before{
+    content: '';
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    right: 5px;
+    bottom: 5px;
+    z-index: -1;
+    background: linear-gradient(90deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4); 
+    background-size: 400%;
+    border-radius: 70px;
+}
+.lg:hover::before{
+    position: absolute;
+    filter: blur(10px);
+    opacity: 1;
+}
+.c1{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    height: 4vh;
+    margin-left: 50%;
+    margin-right: 5px;
+    margin-top: 10px;
+    background-color: #ffeb3b;
+    border-radius: 20px;
+    border-top-right-radius: 0px;
+    cursor: pointer;
+    color: rgb(3, 107, 107);
+}
+.c2{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 48%;
+    height: 4vh;
+    background-color: rgb(245, 245, 140);
+    border-radius: 100px;
+    margin-top: 10px;
+    margin-left: 5px;
+    border-top-left-radius: 0px;
+    cursor: pointer;
+    color: #db007c;
+}
+.mes{
+    position: absolute;
+    display: flex;
+    justify-self: center;
+    align-items: center;
+    top: 5%;
+    left: 72%;
+    width: 135px;
+    height: 4vh;
+    background-color: #db007c;
+    color: #fff;
+    border-radius: 7px;
+    filter: hue-rotate(0deg);
+    animation: animate1 4s linear infinite;
+    transition: .3s;
+}
+.mes:hover{
+    position: absolute;
+    width: 150px;
+    height: 7vh;
+    animation: animate1 0s;
+    font-size: 2vh;
+    font-weight: 600;
+    z-index: 2;
+    padding-left: 3px;
+    cursor: pointer;
+}
+@keyframes animate1{
+    0%{
+        filter: hue-rotate(0deg);
+    }
+    100%{
+        filter: hue-rotate(360deg);
+    }
+}
+.rmes{
+    position: absolute;
+    display: flex;
+    justify-self: center;
+    align-items: center;
+    width: 147px;
+    height: 4vh;
+    border-radius: 7px;
+    background-color: #db007c;
+    top: 8%;
+    left: 12%;
+    animation: animate1 4s linear infinite;
+    transition: .5s;
+}
+.rmes:hover{
+    position: absolute;
+    width: 190px;
+    height: 5.5vh;
+    padding-left: 25px;
+    animation: animate1 0s infinite;
+    font-size: 2vh;
+    font-weight: 600;
+    cursor: pointer;
+    z-index: 2;
+}
+.sbtn{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 50px;
+    left: 915px;
+    background-color: #ffeb3b;
+    width: 80px;
+    height: 3vh;
+    border: 1px solid #fff;
+    border-radius: 4px;
+    font-weight: 600;
+    transition: .5s;
+}
+.sbtn:hover{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 40px;
+    width: 135px;
+    height: 4.5vh;
+    cursor: pointer;
+    font-size: 2vh;
+    font-weight: 900;
+    animation: animate1 4s linear infinite;
+}
+.frm{
+    position: relative;
+    width: 100%;
+    height: 2vh;
+}
+.mbtn{
+    position: absolute;
+    top: 2%;
+    left: 2%;
+    background-color:#ffeb3b;
+}
+form {
+    position: absolute;
+    left: 0;
+    max-width: 300px;
+    height: 7vh;
+}
+.mees{
+    position: absolute;
+    font-size: 4vh;
+    font-weight: 700;
+    text-transform: capitalize;
+}/*
+.frm .mbtn{
+    position: relative;
+}*/
+
+input{
+    width: 900px;
+    height: 3.5vh;
+    border-radius: 7px;
+}
